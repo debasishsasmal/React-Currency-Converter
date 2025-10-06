@@ -2,7 +2,7 @@
 
 A web application that provides real-time currency exchange rates, built with React.js. It fetches live data from an exchange rate API and utilizes a custom hook for clean and reusable conversion logic.
 
-[**Live Demo**](https://your-live-demo-link-here.com)
+[**Live Demo**](https://debasishsasmal.github.io/React-Currency-Converter/)
 ---
 
 ## Tech Stack
