@@ -1,16 +1,62 @@
-# React + Vite
+# React Currency Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application that provides real-time currency exchange rates, built with React.js. It fetches live data from an exchange rate API and utilizes a custom hook for clean and reusable conversion logic.
 
-Currently, two official plugins are available:
+[**Live Demo**](https://your-live-demo-link-here.com)
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+- **Framework:** React.js
+- **Styling:** Tailwind CSS
+- **Language:** JavaScript (ES6)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Screenshot
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<img width="1279" height="881" alt="image" src="https://github.com/user-attachments/assets/abae90cf-a0b5-44df-903e-c29408a0c4ef" />
+
+---
+
+## Features
+
+- **Live Exchange Rates:** Fetches up-to-date currency conversion rates from a live API.
+- **Custom Hook:** Encapsulates API logic into a reusable custom hook, promoting a clean and modular codebase.
+- **Dynamic Conversion:** Instantly calculates and displays the converted amount as the user types.
+- **Currency Swapping:** A user-friendly "swap" button to easily reverse the 'from' and 'to' currencies.
+- **Responsive Design:** A simple and intuitive interface that works on any device.
+
+---
+
+## Core Concepts & Hooks Implemented
+
+This project showcases a practical application of custom hooks and state management in React:
+
+- **Custom Hook (`useCurrencyInfo`):** A custom hook was created to handle the logic for fetching and processing currency data from the API. This makes the main component cleaner and the logic reusable.
+- **`useState`:** Manages state for the 'from' currency, 'to' currency, input amount, and the final converted amount.
+- **`useEffect`:** Triggers the API call within the custom hook whenever the selected currency dependency changes.
+- **API Fetching:** Interfaces with a live currency exchange API to provide accurate, real-time data.
+
+---
+
+## Getting Started / How to Run Locally
+
+To get a local copy up and running, follow these simple steps.
+
+1.  Clone the repository:
+    ```sh
+    git clone [https://github.com/debasishsasmal/React-Currency-Converter.git](https://github.com/debasishsasmal/React-Currency-Converter.git)
+    ```
+2.  Navigate to the project directory:
+    ```sh
+    cd React-Currency-Converter
+    ```
+3.  Install NPM packages:
+    ```sh
+    npm install
+    ```
+4.  Run the application:
+    ```sh
+    npm run dev
+    ```
